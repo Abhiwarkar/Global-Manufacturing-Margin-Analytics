@@ -4,7 +4,7 @@
 
 # 🚀 Global Manufacturing Margin Stress-Test & FX Simulator
 
-**Role:** Financial Data Analyst 
+**Role:**  Data Analyst 
 
 **Industry Focus:** B2B Hardware & Micro-Components 
 
@@ -20,15 +20,11 @@
 
 The analytical models developed in this project directly enable executive decision-making across three core pillars:
 
-* 
 **Strategic Pricing & Margin Protection:** Triggered automated alerts when net margins fell below 15%, prompting proactive price hikes for US clients.
 
-
-* 
 **Supply Chain Pivot Optimization:** Modeled the cost-benefit of switching from standard ocean freight to expedited nearshore suppliers during crisis periods.
 
 
-* 
 **FX Risk Hedging:** Quantified exact financial exposure to Euro volatility, justifying the need for forward currency contracts.
 
 
@@ -41,23 +37,18 @@ Real-world corporate data is messy. I engineered an automated ETL pipeline using
 
 **Key Transformations Applied:**
 
-* 
 **Inconsistent Text & Typos Fixed:** Cleaned supplier names and regions (e.g., standardizing " Germany ", "GER", and "germany" into "Germany") using Trim, Clean, and Replace Values.
 
 
-* 
 **Mixed Date Format Standardization:** Normalized mismatched system dates (e.g., 12-May-2026, 05/12/2026, 45424) into a uniform DD-MM-YYYY format using M-Code logic.
 
 
-* 
 **Financial Data Type Correction:** Converted text-disguised numbers (e.g., $5,500.00, 5500 USD) into strict Decimal formats by extracting text and removing currency symbols prior to model loading.
 
 
-* 
 **Missing Value Imputation:** Addressed NULL, N/A, and "-" entries in critical financial columns by replacing them with 0 to prevent downstream `#VALUE!` calculation errors.
 
 
-* 
 **String Parsing:** Split combined system-generated IDs (e.g., CHIP1029-EMEA) into separate `Product_ID` and `Region` columns using delimiter splits.
 
 
@@ -70,15 +61,13 @@ Real-world corporate data is messy. I engineered an automated ETL pipeline using
 
 Designed a premium interactive dashboard featuring dynamically linked Pivot tables, slicer-driven KPI scorecards, and combo charts, enabling executive-level visibility into regional and product profitability. Adhered to strict Big-4/McKinsey UX standards:
 
-* 
+
 **Zero Gridlines & Whitespace:** Unchecked Excel gridlines for a clean canvas with generous breathing room.
 
 
-* 
 **Corporate Palette:** Navy Blue/Charcoal Grey headers with off-white backgrounds, using Muted Red for negative margins and Teal/Green for positive KPIs.
 
 
-* 
 **Interactivity:** Form Controls (Scroll Bars/Spinners) to actively simulate "FX Fluctuation (%)" and "Shipping Delay Penalty".
 
 
@@ -87,11 +76,9 @@ Designed a premium interactive dashboard featuring dynamically linked Pivot tabl
 
 Formal Big-4 style Profit & Loss Statement highlighting Cost of Goods Sold (COGS) vs. Freight burdens.
 
-* 
 **Structure:** Gross Revenue -> Less COGS -> Less Freight -> Gross Margin -> Less Opex -> Less FX Loss -> Net Income.
 
 
-* 
 **Dynamic Breakdown:** Analyzes Baseline vs. Stressed Scenarios to isolate cost variances.
 
 
@@ -100,7 +87,6 @@ Formal Big-4 style Profit & Loss Statement highlighting Cost of Goods Sold (COGS
 
 Built a 2D Heatmap using Excel Data Tables (What-If Analysis) to cross-reference exact combinations of FX Rates and Shipping Costs.
 
-* 
 **Outcome:** Identifies the exact Break-Even Point (Zero Profit line) across 36 distinct macroeconomic scenarios.
 
 
@@ -113,23 +99,19 @@ A robust hidden backend integrating cleaned data via wildcard `XLOOKUP`, `INDEX/
 
 ## 💻 Core Technical Skills Displayed
 
-* 
 **Data Pipeline (ETL):** Power Query (M-Code basics, data standardization, error handling).
 
 
-* 
 **Scenario Modeling:** What-If Analysis, Excel Data Tables, Form Controls.
 
 
-* 
 **Advanced Logic & Math:** `XLOOKUP`, `INDEX/MATCH`, `SUMIFS`, nested `IFS`, `IFERROR`.
 
 
-* 
 **UI/UX Design:** Big-4 Consulting style executive reporting, Sparklines, Combo Charts, and conditional formatting logic.
 
 
 
 ---
 
-*Created by a data professional who understands that finding the formula is easy, but engineering a data engine that survives real-world anomalies is where true analytics happens.*
+*Created by Abhishek Hiwarkar.*
