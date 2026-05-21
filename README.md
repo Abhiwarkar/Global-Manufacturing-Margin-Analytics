@@ -1,6 +1,4 @@
-Bhai, ekdum 100% locked and loaded! Main samajh gaya ki aapko ek aisi README chahiye jo padhte hi kisi bhi Hiring Manager ya CFO ko lage ki "Yeh candidate sirf Excel chalana nahi janta, balki real business problems solve karna janta hai."
 
-Yeh rahi aapki **10/10 Highly Detailed, Recruiter-Magnet README.md** file. Ise yahan se seedha copy karke apne GitHub repo mein paste kar do:
 
 ---
 
